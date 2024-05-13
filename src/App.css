@@ -1,0 +1,87 @@
+@import url('https://fonts.cdnfonts.com/css/the-wild-breath-of-zelda');
+
+
+#root {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.searchBar {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.dataGallery {
+margin-top: 50px;
+justify-content: center;
+display: flex;
+flex-wrap: wrap;
+padding: 10px;
+gap: 20px;
+font-family: 'The Wild Breath of Zelda', sans-serif;
+}
+
+.mainPage {
+  margin-top: 150px;
+  margin-left: 250px;
+  margin-right: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainPage h1 {
+  font-family: 'The Wild Breath of Zelda', sans-serif;
+
+}
+
+.filteredGallery {
+  margin-top: 150px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  gap: 20px;
+  font-family: 'The Wild Breath of Zelda', sans-serif;
+  }
+
+.cell {
+  border: 1px solid rgb(226, 216, 154);
+}
+
+.cell img {
+  width: 200px;
+  height: 200px;
+  padding: 0;
+}
+
+.cell h3 {
+  font-size: 0.8rem;
+}
+.cell:hover {
+  transform: scale(1.1);
+  transition: transform ease-in-out 0.5s;
+}
+
+.link {
+  color: white;
+}
+
+
+.loadingKorok p {
+  font-family: 'The Wild Breath of Zelda', sans-serif;
+  font-size: 2rem;
+}
+
+.loadingKorok img {
+  width: 300px;
+  height: 300px;
+}
+
+
+/* work in progress on making this a responsive web app */
