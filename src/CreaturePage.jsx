@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom'
 
-function Home() {
+function CreaturePage() {
     const [creatures, setCreatures] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
     const [search, setSearch] = useState("");
@@ -94,4 +94,4 @@ function Home() {
 );
 }
 }
-export default Home;
+export default CreaturePage;
