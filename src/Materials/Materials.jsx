@@ -12,7 +12,7 @@ function Materials() {
     useEffect(() => {
         const fetchData = async() => {
             try {
-                const response = await fetch('https://botw-compendium.herokuapp.com/api/v3/compendium/entry/${id}');
+                const response = await fetch(`https://botw-compendium.herokuapp.com/api/v3/compendium/entry/${id}`);
                 const data = await response.json();
                 setMaterialInfo(data?.data);
                 setIsLoading(false);

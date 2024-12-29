@@ -9,10 +9,10 @@ function Header() {
    <ul className="categories">
     <li><h3>MONSTERS</h3></li>
     <li><h3>LOCATIONS</h3></li>
-    <li><Link to = {"/"} className="link">
+    <li><Link to = {"/materials"} className="link">
     <h3>MATERIALS</h3>
     </Link></li>
-    <li><Link to = {"/"} className="link">
+    <li><Link to = {"/creatures"} className="link">
      <h3>WILDLIFE</h3>
     </Link></li>
     </ul>
@@ -21,4 +21,4 @@ function Header() {
   )
 }
 
-export default Header
+export default Header;

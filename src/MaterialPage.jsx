@@ -52,7 +52,7 @@ function MaterialPage() {
         )
     } else {
         let row = materials?.map((material)=> (
-            <Link key={material.id} to={`entry/${material.id}`} className="Link">
+            <Link key={material.id} to={`entry/${material.id}`} className="link">
                 <div className="cell">
                     <img src={material.image} alt=""/>
                     <h3>{material.name.toUpperCase()}</h3>
@@ -67,14 +67,14 @@ function MaterialPage() {
                 <p>Discover the amazing and unique materials of Hyrule!</p>
             </div>
             <div className ="searchBar" >
-            <input type="text" placeholder="Search by Name..." onChange={(e) => searchCreatures(e.target.value)} value={search}/>
+            <input type="text" placeholder="Search by Name..." onChange={(e) => searchMaterials(e.target.value)} value={search}/>
             <button type="submit" onClick={clearSearch}>Clear</button>
             </div>
             {search.length > 0 ? (
                 filteredData.map((material) => {
                     return (
                         <div className="filteredGallery">
-                            <Link key={material.id} to={`entry/${material.id}`} className="Link">
+                            <Link key={material.id} to={`entry/${material.id}`} className="link">
                                 <div className="cell">
                                     <img src={material.image} alt=""/>
                                     <h3>{material.name.toUpperCase()}</h3>

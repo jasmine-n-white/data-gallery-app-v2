@@ -14,9 +14,9 @@ function App() {
     <>
     <Header />
     <Routes>
-      <Route path="/" Component={MaterialPage} />
+      <Route path="/materials" Component={MaterialPage} />
       <Route path="entry/:id" Component={Materials} />
-      <Route path="/" Component={CreaturePage} />
+      <Route path="/creatures" Component={CreaturePage} />
       <Route path ="entry/:id" Component={CreatureProfile} />
       <Route path="*" Component={NotFound} />
     </Routes>
