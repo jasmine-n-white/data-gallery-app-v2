@@ -52,7 +52,7 @@ function MaterialPage() {
         )
     } else {
         let row = materials?.map((material)=> (
-            <Link key={material.id} to={`entry/${material.id}`} className="link">
+            <Link key={material.id} to={`materialEntry/${material.id}`} className="link">
                 <div className="cell">
                     <img src={material.image} alt=""/>
                     <h3>{material.name.toUpperCase()}</h3>
@@ -74,7 +74,7 @@ function MaterialPage() {
                 filteredData.map((material) => {
                     return (
                         <div className="filteredGallery">
-                            <Link key={material.id} to={`entry/${material.id}`} className="link">
+                            <Link key={material.id} to={`materialEntry/${material.id}`} className="link">
                                 <div className="cell">
                                     <img src={material.image} alt=""/>
                                     <h3>{material.name.toUpperCase()}</h3>

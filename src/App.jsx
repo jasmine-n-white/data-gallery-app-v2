@@ -7,6 +7,7 @@ import NotFound from './NotFound'
 import Header from './Header/Header.jsx'
 import Materials from './Materials/Materials.jsx'
 import CreatureProfile from './Creature/CreatureProfile.jsx'
+import Home from './Home/Home.jsx'
 
 function App() {
 
@@ -14,10 +15,11 @@ function App() {
     <>
     <Header />
     <Routes>
+      <Route path="/" Component={Home} />
       <Route path="/materials" Component={MaterialPage} />
-      <Route path="entry/:id" Component={Materials} />
+      <Route path="materialEntry/:id" Component={Materials} />
       <Route path="/creatures" Component={CreaturePage} />
-      <Route path ="entry/:id" Component={CreatureProfile} />
+      <Route path ="creatureEntry/:id" Component={CreatureProfile} />
       <Route path="*" Component={NotFound} />
     </Routes>
     </>

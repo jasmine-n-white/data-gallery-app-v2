@@ -5,7 +5,9 @@ function Header() {
   return (
     <>
     <header className = "headerFormat">
+    <Link to = {"/"}>
     <img src="https://www.pngmart.com/files/22/The-Legend-Of-Zelda-Breath-Of-The-Wild-Logo-PNG-Transparent.png"alt="The Legend of Zelda Breath of the Wild logo"/>
+    </Link>
    <ul className="categories">
     <li><h3>MONSTERS</h3></li>
     <li><h3>LOCATIONS</h3></li>
