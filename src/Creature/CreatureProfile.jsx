@@ -53,4 +53,4 @@ function CreatureProfile() {
         )
     }
 }
-export default CreatureProfile
+export default CreatureProfile;

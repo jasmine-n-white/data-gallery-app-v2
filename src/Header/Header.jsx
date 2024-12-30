@@ -10,7 +10,7 @@ function Header() {
     </Link>
    <ul className="categories">
     <li><h3>MONSTERS</h3></li>
-    <li><h3>LOCATIONS</h3></li>
+    <li><h3>TREASURES</h3></li>
     <li><Link to = {"/materials"} className="link">
     <h3>MATERIALS</h3>
     </Link></li>

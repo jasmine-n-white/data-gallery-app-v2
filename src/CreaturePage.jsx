@@ -55,7 +55,7 @@ function CreaturePage() {
         )
     } else {
    let row = creatures?.map((creature)=> (
-    <Link key={creature.id} to={`creatureEntry/${creature.id}`} className="link">
+    <Link key={creature.id} to={`/creatures/entry/${creature.id}`} className="link">
         <div className="cell">
         <img src={creature.image} alt=""/>
         <h3>{creature.name.toUpperCase()}</h3>
@@ -77,7 +77,7 @@ function CreaturePage() {
             filteredData.map((creature) => {
                 return (
                     <div className="filteredGallery">
-                        <Link key={creature.id} to={`creatureEntry/${creature.id}`} className="link">
+                        <Link key={creature.id} to={`/creatures/entry/${creature.id}`} className="link">
                             <div className="cell">
                             <img src={creature.image} alt=""/>
                             <h3>{creature.name.toUpperCase()}</h3>

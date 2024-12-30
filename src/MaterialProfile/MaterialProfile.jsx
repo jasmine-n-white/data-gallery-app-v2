@@ -1,13 +1,14 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
 import {useParams} from 'react-router-dom'
-import './Materials.css'
+import './MaterialProfile.css'
 
-function Materials() {
+function MaterialProfile() {
     const {id} = useParams();
     const [materialInfo, setMaterialInfo] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
     const [errorMessage, setErrorMessage] = useState(null);
+    const capitalizeFirstLetter = (string) => string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
 
     useEffect(() => {
         const fetchData = async() => {
@@ -36,7 +37,7 @@ function Materials() {
 
     } else {
         let locations = materialInfo.common_locations ? materialInfo.common_locations.join(" and ") : "Unknown";
-        let cookingEffect = materialInfo.cooking_effect ? materialInfo.cooking_effect.join(" and ") : "Unkown";
+        let cookingEffect = capitalizeFirstLetter(materialInfo.cooking_effect);
         return (
             <>
             <p>{errorMessage}</p>
@@ -57,4 +58,4 @@ function Materials() {
     }
   
 }
-export default Materials
+export default MaterialProfile;

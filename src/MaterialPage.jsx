@@ -52,7 +52,7 @@ function MaterialPage() {
         )
     } else {
         let row = materials?.map((material)=> (
-            <Link key={material.id} to={`materialEntry/${material.id}`} className="link">
+            <Link key={material.id} to={`/materials/entry/${material.id}`} className="link">
                 <div className="cell">
                     <img src={material.image} alt=""/>
                     <h3>{material.name.toUpperCase()}</h3>
@@ -64,7 +64,7 @@ function MaterialPage() {
             <p>{errorMessage}</p>
             <div className="mainPage">
                 <h1>MATERIALS</h1>
-                <p>Discover the amazing and unique materials of Hyrule!</p>
+                <p>Explore the vibrant world of Breath of the Wild with our gallery of plants, fruits, and vegetables! Discover their habitats, unique properties, and uses, from boosting stamina to crafting meals. Whether you're a seasoned adventurer or a newcomer, this collection is your ultimate guide to Hyrule's natural treasures.</p>
             </div>
             <div className ="searchBar" >
             <input type="text" placeholder="Search by Name..." onChange={(e) => searchMaterials(e.target.value)} value={search}/>
@@ -74,7 +74,7 @@ function MaterialPage() {
                 filteredData.map((material) => {
                     return (
                         <div className="filteredGallery">
-                            <Link key={material.id} to={`materialEntry/${material.id}`} className="link">
+                            <Link key={material.id} to={`/materials/entry/${material.id}`} className="link">
                                 <div className="cell">
                                     <img src={material.image} alt=""/>
                                     <h3>{material.name.toUpperCase()}</h3>
