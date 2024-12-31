@@ -9,7 +9,9 @@ function Header() {
     <img src="https://www.pngmart.com/files/22/The-Legend-Of-Zelda-Breath-Of-The-Wild-Logo-PNG-Transparent.png"alt="The Legend of Zelda Breath of the Wild logo"/>
     </Link>
    <ul className="categories">
+    <Link to = {"/monsters"} className="link">
     <li><h3>MONSTERS</h3></li>
+    </Link>
     <li><h3>TREASURES</h3></li>
     <li><Link to = {"/materials"} className="link">
     <h3>MATERIALS</h3>

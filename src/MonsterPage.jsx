@@ -54,12 +54,42 @@ function MonsterPage() {
         )
     } else {
         let row = monsters?.map((monster) => (
-        <Link key={monster.id} to {`/monsters/entry/${monster.id}`} className="link">
-        
-        </Link>
-
-        
+        <Link key={monster.id} to={`/monsters/entry/${monster.id}`} className="link">
+            <div className="cell">
+                <img src={monster.image} alt=""/>
+                <h3>{monster.name.toUpperCase()}</h3>
+            </div>
+        </Link>     
         ))
+        return (
+            <>
+            <p>{errorMessage}</p>
+            <div className="mainPage">
+                <h1>MONSTERS</h1>
+                <p>Welcome to the Breath of the Wild Monster Gallery! Dive into the world of Hyrule’s fiercest foes, from towering Guardians to sly Bokoblins. Explore their traits, behaviors, and secrets to mastering the art of battle. Are you ready to face them all?</p>
+            </div>
+            <div className="searchBar">
+                <input type="text" placeholder="Search by Name..." onChange={(e) => searchMonsters(e.target.value)} value={search}/>
+                <button type="submit" onClick={clearSearch}>Clear</button>
+            </div>
+            {search.length > 0 ? (
+                filteredData.map((monster) => {
+                    return (
+                        <div className="filteredGallery">
+                            <Link key={monster.id} to={`/monsters/entry/${monster.id}`} className="link">
+                                <div className="cell">
+                                    <img src={monster.image} alt=""/>
+                                    <h3>{monster.name.toUpperCase()}</h3>
+                                </div>
+                            </Link>
+                        </div>
+                    )
+                })
+            ) : (
+                <div className="dataGallery">{row}</div>
+            )}
+            </>
+        );
     }
 
 }
