@@ -3,6 +3,7 @@ import {Routes, Route} from 'react-router-dom'
 import './App.css'
 import CreaturePage from './CreaturePage'
 import MaterialPage from './MaterialPage'
+import MonsterPage from './MonsterPage'
 import NotFound from './NotFound'
 import Header from './Header/Header.jsx'
 import MaterialProfile from './MaterialProfile/MaterialProfile.jsx'
@@ -16,6 +17,7 @@ function App() {
     <Header />
     <Routes>
       <Route path="/" Component={Home} />
+      <Route path="/monsters" Component={MonsterPage} />
       <Route path="/materials" Component={MaterialPage} />
       <Route path="/materials/entry/:id" Component={MaterialProfile} />
       <Route path="/creatures" Component={CreaturePage} />
