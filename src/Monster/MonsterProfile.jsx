@@ -35,12 +35,6 @@ function MonsterProfile() {
     )
   } else {
     let locations = monsterInfo.common_locations ? monsterInfo.common_locations.join(" and ") : "Unknown";
-    // let drops;
-    // if (monsterInfo.drops.length == 0) {
-    //   drops = "None";
-    // } else {
-    //   drops = monsterInfo.drops.join(", ");
-    // }
     let drops = monsterInfo.drops?.map((drop) => (
       <li>{capitalizeFirstLetter(drop)}</li>
     ))

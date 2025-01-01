@@ -11,8 +11,7 @@ function MonsterPage() {
     useEffect(() => {
         const fetchData = async() => {
             try {
-                const response = await fetch("https://botw-compendium.herokuapp.com/api/v3/compendium/category/monsters");
-                
+                const response = await fetch("https://botw-compendium.herokuapp.com/api/v3/compendium/category/monsters");      
                 const data = await response.json();
                 setMonsters(data?.data);
                 console.log(monsters);
