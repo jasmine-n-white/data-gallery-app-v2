@@ -17,7 +17,7 @@ function CreatureProfile() {
                 setIsLoading(false);
             } catch(error) {
                 console.log(error);
-                setErrorMessage("Error! Could not fetch data.")
+                setErrorMessage("Error! Could not fetch data.");
             }
         }
         fetchData();
