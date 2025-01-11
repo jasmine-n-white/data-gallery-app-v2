@@ -3,6 +3,7 @@ import {Routes, Route} from 'react-router-dom'
 import './App.css'
 import CreaturePage from './CreaturePage'
 import MaterialPage from './MaterialPage'
+import TreasurePage from './TreasurePage'
 import MonsterPage from './MonsterPage'
 import NotFound from './NotFound'
 import Header from './Header/Header.jsx'
@@ -20,6 +21,7 @@ function App() {
       <Route path="/" Component={Home} />
       <Route path="/monsters" Component={MonsterPage} />
       <Route path="/monsters/entry/:id" Component={MonsterProfile} />
+      <Route path="/treasures" Component={TreasurePage} />
       <Route path="/materials" Component={MaterialPage} />
       <Route path="/materials/entry/:id" Component={MaterialProfile} />
       <Route path="/creatures" Component={CreaturePage} />

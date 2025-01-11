@@ -69,10 +69,27 @@ function TreasurePage() {
             <div className="searchBar">
                 <input type="text" placeholder="Search by Name..." onChange={(e) => searchTreasures(e.target.value)} value={search}/>
                 <button type="submit" onClick={clearSearch}>Clear</button>
-            </div>
+            </div>       
+            {search.length > 0 ? (
+                filteredData.map((treasure) => {
+                    return (
+                        <div className="filteredGallery">
+                            <Link key={treasure.id} to={`/treasures/entry/${treasure.id}`} className="link">
+                                <div className="cell">
+                                    <img src={treasure.image} alt=""/>
+                                    <h3>{treasure.name.toUpperCase()}</h3>
+                                </div>
+                            </Link>
+                        </div>
+                    )
+                })
+            ) : (
+                <div className="dataGallery">{row}</div>
+            )}
             </>
+
         )
     }
 }
 
-export default TreasurePage
+export default TreasurePage;

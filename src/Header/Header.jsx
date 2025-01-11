@@ -12,7 +12,9 @@ function Header() {
     <Link to = {"/monsters"} className="link">
     <li><h3>MONSTERS</h3></li>
     </Link>
+    <Link to = {"/treasures"} className="link">
     <li><h3>TREASURES</h3></li>
+    </Link>
     <li><Link to = {"/materials"} className="link">
     <h3>MATERIALS</h3>
     </Link></li>
