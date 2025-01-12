@@ -53,7 +53,7 @@ function TreasurePage() {
         )
     } else {
         let row = treasures?.map((treasure) => (
-        <Link key={treasure.id} to={`/treasures/entry${treasure.id}`} className="link">
+        <Link key={treasure.id} to={`/treasures/entry/${treasure.id}`} className="link">
             <div className="cell">
                 <img src={treasure.image} alt=""/>
                 <h3>{treasure.name.toUpperCase()}</h3>

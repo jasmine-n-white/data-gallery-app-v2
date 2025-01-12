@@ -7,6 +7,7 @@ import TreasurePage from './TreasurePage'
 import MonsterPage from './MonsterPage'
 import NotFound from './NotFound'
 import Header from './Header/Header.jsx'
+import TreasureProfile from './Treasure/TreasureProfile.jsx'
 import MonsterProfile from './Monster/MonsterProfile.jsx'
 import MaterialProfile from './Material/MaterialProfile.jsx'
 import CreatureProfile from './Creature/CreatureProfile.jsx'
@@ -22,6 +23,7 @@ function App() {
       <Route path="/monsters" Component={MonsterPage} />
       <Route path="/monsters/entry/:id" Component={MonsterProfile} />
       <Route path="/treasures" Component={TreasurePage} />
+      <Route path="/treasures/entry/:id" Component={TreasureProfile} />
       <Route path="/materials" Component={MaterialPage} />
       <Route path="/materials/entry/:id" Component={MaterialProfile} />
       <Route path="/creatures" Component={CreaturePage} />
