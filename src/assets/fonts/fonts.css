@@ -1,0 +1,11 @@
+/* Font face declarations for locally hosted fonts */
+
+@font-face {
+  font-family: 'The Wild Breath of Zelda';
+  src: url('./the-wild-breath-of-zelda.woff2') format('woff2'),
+       url('./the-wild-breath-of-zelda.woff') format('woff'),
+       url('./the-wild-breath-of-zelda.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Improves loading performance */
+}
